@@ -1,0 +1,28 @@
+/* Add custom card styles */
+.custom-card {
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+/* Style the card title */
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the card text and link */
+.card-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-text a:hover {
+    text-decoration: underline;
+}
