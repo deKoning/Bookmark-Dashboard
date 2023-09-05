@@ -6,9 +6,10 @@
     <title>Bookmarks</title>
     <!-- Include Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Include your custom CSS -->
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
 <div class="container">
@@ -33,10 +34,21 @@
                                 <a href="<?php echo $row['url']; ?>" target="_blank" class="card-link"><?php echo $row['url']; ?></a>
                             </p>
                             <p class="card-text"><strong>Tags:</strong> <?php echo $row['tags']; ?></p>
-                            <!-- Delete Button -->
+                            
+                            <!-- Icon Container -->
+                            <div class="icon-container d-flex justify-content-between mt-auto">
+                                <!-- Delete Icon -->
+                                <i class="fas fa-trash-alt delete-icon delete-btn" data-toggle="modal" data-target="#confirmDeleteModal" data-cardid="<?php echo $row['id']; ?>"></i>
+                                <!-- Edit Icon -->
+                                <a href="edit.php?id=<?php echo $row['id']; ?>"><i class="fas fa-edit edit-icon"></i></a>
+                            </div>
+                            
+                            <!-- 
+                            Delete Button
                             <button class="btn btn-danger delete-btn mt-auto" data-toggle="modal" data-target="#confirmDeleteModal" data-cardid="<?php echo $row['id']; ?>">Delete</button>
-                            <!-- Edit Button -->
+                            Edit Button
                             <a href="edit.php?id=<?php echo $row['id']; ?>" class="btn btn-primary edit-btn">Edit</a>
+                            -->
                         </div>
                     </div>
                 </div>
@@ -73,10 +85,6 @@
 
 <!-- Include jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Your Custom JavaScript -->
-<script src="your-custom-script.js"></script>
-
 
 <script>
     $(document).ready(function() {

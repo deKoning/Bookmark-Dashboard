@@ -26,3 +26,17 @@
 .card-text a:hover {
     text-decoration: underline;
 }
+
+
+/* Style the delete icon */
+.delete-icon {
+    color: red; /* Change icon color to red */
+    font-size: 24px; /* Adjust icon size */
+    margin-right: 10px; /* Add margin to the right for spacing */
+}
+
+/* Style the edit icon */
+.edit-icon {
+    color: blue; /* Change icon color to blue */
+    font-size: 24px; /* Adjust icon size */
+}
