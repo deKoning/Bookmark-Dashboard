@@ -17,6 +17,8 @@ These instructions will help you set up and run the Bookmark Dashboard web appli
 
 ### Prerequisites
 
+❤ create a uploads folder!!! 
+
 - [XAMPP](https://www.apachefriends.org/index.html) or similar web server software.
 - A modern web browser.
 
